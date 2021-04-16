@@ -1,0 +1,749 @@
+.bgHighlight {
+    max-width: 180px !important;
+    min-width: 70px !important;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+    background-color: #22B14C !important;
+}   
+.fpts-header {
+    line-height: 40px;
+    height: 40px;
+    width: 100%;
+    float: left;
+    padding: 0 10px;
+    background: #fff;
+    white-space: nowrap;
+}
+.fpts-header .header-left {
+    font-size: 26px;
+}
+.fpts-header > div {
+    float: left;
+}
+body .fpts-header .header-left a {
+    text-decoration: none;
+    color: #000;
+    outline: none;
+}
+body .fpts-header .header-left a .text-logo {
+    color: #034e95;
+}
+/* header-center */
+.fpts-header .header-center ul li ul > li > a {
+    text-transform: none;
+}
+.fpts-header .header-center ul li a {
+    color: #000;
+    text-decoration: none;
+}
+.fpts-header .header-center ul li a {
+    white-space: nowrap;
+}
+.fpts-header .header-center ul li ul {
+    display: none;
+    position: absolute;
+    z-index: 20;
+    border-top: 3px solid transparent;
+    top: 40px;
+    left: 0;
+    box-shadow: -3px 4px 10px #555;
+}
+.fpts-header .header-center ul li a {
+    color: #000;
+    text-decoration: none;
+}
+.header-center>ul>.eezfu-hover-giaodichdacbiet{
+    border-right: none !important; 
+}
+span#spnLoginName {
+    font-family: sans-serif;
+}
+@media (max-width: 1439px){
+.fpts-header .header-center ul li {
+    list-style-type: none;
+    font-size: 11px;
+    padding: 0px 12px 0;
+    border-bottom: 1px solid #e9e9e9;        
+    text-transform: uppercase;
+    position: relative;
+    background: #fff;
+    font-family: sans-serif;
+}
+}
+.ezfu-hover-giaodichchungkhoan:hover .hover-item  {display: block;}
+.ezfu-hover-chuyentien:hover         .hover-item  {display: block;}
+.ezfu-hover-giaodichdacbiet:hover    .hover-item  {display: block;}
+.ezfu-hover-quanlytaikhoan:hover     .hover-item  {display: block;}
+.eezfu-hover-giaodichdacbiet:hover   .hover-item  {display: block;}
+.dropdown:hover                      ul.dropdown-menu.dropdown-menu-price {display: block !important;}
+
+.fpts-header .header-center ul li ul > li:hover > a {color: #0055ba;}
+@media (max-width: 1439px){
+    .fpts-header .header-center ul li:hover ul > li > a {
+    font-size: 12px;
+}
+}
+.menuLeft {
+    float: left;
+}
+.menuRight {
+    float: right;
+}
+.dropdown-menu-price > li > a:focus, .dropdown-menu-price > li > a:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: #828282 !important;
+}
+.dropdown-menu-price > li > a:active {
+    color: #fff;
+    text-decoration: none;
+    border-color: #828282 !important;
+    /*background-color: #22B14C!important;*/
+}
+body .fpts-header .header-center ul {
+    padding-left: 0;
+}
+
+.fpts-header .header-center ul {
+    display: flex;
+}
+.fpts-header .header-right {
+    float: right;
+}
+.fpts-header .header-right .box {
+    display: flex;
+}
+.OrderForm {
+    float: right !important;
+}
+.OrderForm {
+    width: auto;
+    height: 40px;
+    padding-left: 10px;
+    background-color: #fff;
+    display: flex;
+    padding-top: 4px;
+}
+body .fpts-header .header-right .box .OrderForm .form__tooltip__exchange img {
+    vertical-align: top;
+}
+body .fpts-header .header-right .box .OrderForm .form__tooltip__exchange #tooltip-exchange {
+    display: none;
+    width: 200px;
+    height: 40px;
+}
+body .fpts-header .header-right .box .OrderForm .ezfu-group-dropdow .ezfu-button img {
+    vertical-align: top;
+}
+.ezfu-button .fpts-icon-menu {
+    width: 22px;
+}
+#TruyCapDichVu {
+    top: 6px;
+}
+.ezfu-button {
+    display: inline-block;
+    padding: 0 10px;
+    position: relative;
+    cursor: pointer;
+}
+body .fpts-header .header-right .box .OrderForm .ezfu-dropdow {
+    position: relative;
+}
+#account {
+    top: -7px;
+    position: relative;
+}
+.spnName {
+    color: #2371af;
+    font-size: 11pt;
+    padding-right: 5px;
+}
+.ezfu-loginButton .fa {
+    color: #2371AF;
+    font-size: 16px;
+    padding-top: 0px;
+    position: relative;
+    top: 2px;
+    right: unset;
+    bottom: unset;
+    left: unset;
+}
+.ezfu-loginButton > span {
+    position: relative;
+    top: unset;
+    right: unset;
+    bottom: 8px;
+    left: 5px;
+    padding-right: 20px;
+    color: #235aaf;
+}
+.ezfu-loginButton > span {
+    top: 2px;
+}
+body .panel-horizontally {
+    background-color: #fff;
+}
+.panel-horizontally {
+    overflow: hidden;
+    background: #efefef;
+    height: 100%;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+body .panel-horizontally .panel-top {
+    background-color: #000;
+}
+.panel-horizontally .panel-top {
+    overflow: auto;
+    background: #fff;
+    background-color: #000;
+}
+.col-priceboard {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+.container-fluid {
+    padding: 0px !important;
+}
+#divIndexChart {
+    white-space: nowrap;
+    margin: 5px 0 5px 0;
+    text-align: left;
+    background: #060606;
+    display: block;
+}
+div.scrollWrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+div.scrollableArea {
+    position: relative;
+    width: auto;
+    height: 100%;
+}
+.col-priceboard {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+.dvChart {
+    text-align: center;
+    border: 1px solid transparent;
+    list-style-type: none;
+    min-width: 220px;
+    max-width: 250px;
+    display: inline-block;
+    /* background-color: rgb(29, 29, 29); */
+    margin: 0 3px 0 0;
+}
+.dvChart p {
+    margin: -4px !important;
+}
+.dvChart p:nth-child(1) span {
+    font-size: 10pt;
+}
+.mar, .maru, .mard, .marn, .mar_, .marc, .marf {
+    font-family: Helvetica, Arial, Sans-Serif;
+    font-size: 9pt;
+    font-weight: normal;
+}
+.mar_ {
+    color: #ffffff;
+}
+.maru {
+    color: #00ff00;
+}
+.txtIndex {
+    /* padding: 0 3px; */
+    font-family: Arial;
+    font-size: 9pt;
+}
+.arrowUp {
+    background-position: -6px -2px;
+}
+.arrowUp, .arrowDown, .square {
+    background-image: url("https://eztrade.fpts.com.vn/images/SlideChart/Arrow.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+}
+td, th, span, p {
+    color: unset;
+}
+.marc {
+    color: #ff00ff;
+}
+.square {
+    background-position: -25px -2px;
+}
+.marn {
+    color: #f7ff31;
+}
+.arrowDown {
+    background-position: -43px -1px;
+}
+.mard {
+    color: #ff0000 !important;
+}
+.marf {
+    color: #66ccff;
+}
+.HO_MarketStat {
+    padding-left: 3px;
+    font-family: Arial;
+}
+span.HA_MarketStat, span.HO_MarketStat, span.UP_MarketStat {
+    color: #fff;
+}
+div#price-board-layout {
+    margin-top: 7px;
+}
+.ezfu-main-top {
+    overflow: hidden;
+}
+.ezfu-main-top {
+    background-color: #000;
+}
+#dvMenuBar {
+    min-width: 1090px;
+    min-height: 30px;
+    position: fixed;
+    /* border-bottom: 2px solid #22b14c; */
+    /* background-color: #1D1D1D; */
+    border: none !important;
+    width: 100%;
+    z-index: 3;
+    background: #010101;
+}
+#dvMenuBar {
+    position: relative !important;
+    min-width: 200px !important;
+}
+#mnLP {
+    min-width: unset !important;
+    width: unset !important;
+}
+@media (min-width: 660px){
+    .navbar-price {
+        float: left;
+        margin: 0;
+    }
+}
+.navbar-price {
+    margin: 0 !important;
+    padding-right: 0;
+    /* min-width: 660px; */
+}
+.nav-price {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+@media (min-width: 660px){
+    .navbar-price > li {
+        float: left;
+    }
+}
+.nav-price > li {
+    position: relative;
+    display: block;
+}
+.nav-tabs-price > li {
+    float: left;
+    margin-bottom: -1px;
+}
+.nav-price > li > a {
+    position: relative;
+    display: block;
+  
+}
+.nav-tabs-price > li > a {
+    margin-right: 1px;
+    line-height: 1.42857143;
+    border: 1px solid transparent;
+    border-radius: 4px 4px 0 0;
+}
+.navbar-price > li > a {
+    color: #fff !important;
+    padding: 4px;
+    /* margin: 1px 1px 0 1px; */
+    background-color: #717171;
+    border-radius: 2px 2px 0 0 ;
+    line-height: 20px;
+    font-size: 14px;
+}
+/* @media (min-width: 660px)
+{
+    .navbar-price > li > a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+} */
+body .fpts-header .header-center ul li ul {
+    border-top: none;
+}
+.dropdown-menu {
+    position: absolute !important;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 10rem;
+    padding: .5rem 0;
+    margin: .125rem 0 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: .25rem;
+}
+
+.navbar-price > li > .dropdown-menu {
+    margin-bottom: 0;
+    /* border-top-left-radius: 4px; */
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.dropdown-menu-price > li {
+    min-width: 210px;
+    max-width: 700px;
+    position: relative;
+}
+.dropdown-menu-price {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    max-height: 241px;
+    overflow-y: auto;
+    width: 450px !important;
+    z-index: 10000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    max-width: 400px;
+    padding: 0 0;
+    margin: 0 0 0 1px;
+    font-size: 12px;
+    text-align: left;
+    list-style: none;
+    background-color: #303030;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid transparent;
+    border-radius: 0 2px 2px 2px;
+    -webkit-box-shadow: 0 6px 12px rgb(0 0 0 / 18%);
+    box-shadow: 0 6px 12px rgb(0 0 0 / 18%);
+}
+.bdMenu {
+    border-bottom: 1px solid #6F6F6F;
+    color: #fff !important;
+    font-size: 12px;
+    font-family: Arial;
+}
+a:link {
+    text-decoration: none;
+}
+input#txtAdd {
+    height: 28px;
+}
+.dropdown-menu-price > li > a {
+    display: block;
+    padding: 6px 10px;
+    clear: both;
+    font-weight: 400;
+    line-height: 1.42857143;
+    color: #fff;
+    white-space: normal;
+}
+.ezfu-main-top #dvMenuBar {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+ul#mnLP {
+    display: block !important;
+}
+#spExpand {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    text-align: center;
+    color: #ccc;
+    line-height: 30px;
+    cursor: pointer;
+}
+.imgExpandOpen {
+    background-position: -1px 1px;
+}
+.imgExpandOpen, .imgExpandOpen:hover {
+    margin-left: 3px;
+    background-image: url("https://eztrade.fpts.com.vn/images/menuMW/arrowdown_2.png");
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    display: block;
+    right: 5px;
+    top: 5px;
+}
+.imgAdd {
+    background-position: 1px -1px;
+}
+.imgAdd, imgAdd:hover {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    display: block;
+    right: 5px;
+    top: 5px;
+    background: url("https://eztrade.fpts.com.vn/images/menuMW/add.png") no-repeat;
+    cursor: pointer;
+}
+#dvMenuBar .pull-right {
+    height: 30px;
+    float: right !important;
+}
+.div-btn {
+    text-align: right;
+    /* padding: 0px 2px 5px 2px; */
+    min-width: 290px;
+    /* width: 290px; */
+    line-height: 1.2em;
+}
+.div-btn {
+    min-width: 320px !important;
+}
+.btn {
+    min-width: 80px;
+    border: 1px solid #2371AF;
+    width: auto;
+    height: 34px;
+    color: #333;
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+.btn-chart {
+    border-radius: unset;
+    height: 30px;
+    width: 30px;
+    background: transparent;
+    padding: 5px;
+}
+.btn {
+    border: unset;
+    min-width: 40px;
+    color: #fff;
+    border-radius: 11px;
+    /* padding: 2px 5px 0 5px; */
+    outline: unset;
+    /* height: unset; */
+}
+.btn-chart > img {
+    max-width: 100%;
+    max-height: 100%;
+}
+img {
+    vertical-align: middle;
+    border: 0;
+}
+.cl-button, .btn-setting, .date-time {
+    display: inline-block;
+    float: right;
+}
+
+.imgHelp {
+    background-position: 1px 0;
+}
+input[type=button] {
+    outline: none !important;
+}
+.imgHelp, .imgHelp:hover {
+    background: url("https://eztrade.fpts.com.vn/images/menuMW/help30.png") no-repeat;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    /* margin: 6px 0; */
+    border: none;
+}
+.date-time {
+    display: inline-block;
+    text-align: right;
+    margin: 0 8px 0 0;
+    overflow: hidden;
+    /* float: left; */
+    line-height: 12px;
+}
+.imgCustom {
+    background-position: 1px 0;
+}
+.date-time > label {
+    /* margin-bottom: 0px; */
+    color: #fff;
+}
+#lbDate, #clock {
+    text-align: center;
+    font-size: 12px;
+    /* padding: 10px 10px 0 3px; */
+}
+#divAcount, #lbDate, #lbClock {
+    text-align: center;
+    font-size: 12px;
+    padding: 10px 10px 0 3px;
+}
+.imgCustom, .imgCustom:hover {
+background: url("https://eztrade.fpts.com.vn/images/modalCustom/custom30.png") no-repeat;
+display: inline-block;
+width: 30px;
+height: 30px;
+/* margin: 6px 0; */
+border: none;
+margin-right: 10px;
+}
+/* css table */
+#dvFixedH #dvContentLP {
+min-width: 960px;
+}
+div#dvContentLP {
+overflow-x: auto !important;
+position: relative;
+/* top: 30px; */
+z-index: 1;
+min-height: 200px;
+}
+.table-responsive {
+border: none !important;
+}
+.table {
+margin-bottom: 5px;
+}
+#tbLP {
+margin-bottom: 0px;
+}
+.table-priceboard {
+border: 1px #505050 double !important;
+}
+.table-priceboard {
+border: 1px solid #858585 !Important;
+}
+.ezfu-main-top tr {
+box-sizing: inherit;
+height: inherit !important;
+}
+#dvContentLP table thead tr th {
+text-align: center;
+line-height: 1.4em;
+}
+.hbrb, .hbr_, .hb_b, .hb__, .hgrb, .hgr_, .hg_b, .hg__ {
+font-weight: bold;
+font-family: arial;
+font-size: 8pt;
+text-align: center;
+color: #ffffff;
+}
+.ezfu-main-top .table-priceboard > tbody > tr > td, .ezfu-main-top .table-priceboard > tbody > tr > th, .ezfu-main-top .table-priceboard > tfoot > tr > td, .ezfu-main-top .table-priceboard > tfoot > tr > th, .ezfu-main-top .table-priceboard > thead > tr > td, .ezfu-main-top .table-priceboard > thead > tr > th {
+white-space: nowrap;
+padding: 7px !important;
+vertical-align: middle !important;
+}
+.table-priceboard thead tr th {
+border: 1px solid #858585 !Important;
+}
+.ezfu-main-top tr {
+box-sizing: inherit;
+height: inherit !important;
+}
+tbody#firstTbody {
+border-top: none;
+/* border-bottom: 1px double #fff; */
+}
+.ezfu-main-top .table > tbody > tr > td:first-child {
+max-width: 90px;
+width: 90px;
+}
+.ezfu-main-top .table > tbody > tr > td {
+padding: 2px 3px 0px !important;
+line-height: 1.5em !important;
+}
+input[type=checkbox].priceboard {
+vertical-align: bottom;
+margin: 4px 4px 0 4px;
+margin-top: 1px \9;
+line-height: normal;
+}
+input[type=checkbox].priceboard {
+margin: 4px !important;
+}
+td.cccu.fixedcol>span {
+color: #00ff00;
+}
+.brr, .b_r, .grr, .g_r {
+    color: #f7ff31 !important;
+}
+.brc, .b_c, .grc, .g_c {
+    color: #ff00ff !important;
+}
+.brf, .b_f, .grf, .g_f {
+    color: #66ccff !important;
+}
+.bru, .b_u, .gru, .g_u {
+color: #00ff00  !important;
+}
+.brd, .b_d, .grd, .g_d {
+    color: #ff0000 !important;
+}
+
+.bra, .b_a, .gra, .g_a, .br_, .b__, .gr_, .g__ {
+color: #ffffff  !important;
+}
+.grc, .grf, .grr, .gru, .grd, .gra, .gr_, .g_c, .g_f, .g_r, .g_u, .g_d, .g_a, .g__ {
+background-color: #444444;
+}
+.ezfu-main-top .hgrb, .ezfu-main-top .hg_b {
+background-color: #444 !important;
+}
+.ezfu-main-top td {
+border: 1px solid #505050 !important;
+}
+.brc, .brf, .brr, .bru, .brd, .bra, .br_, .b_c, .b_f, .b_r, .b_u, .b_d, .b_a, .b__, .grc, .grf, .grr, .gru, .grd, .gra, .gr_, .g_c, .g_f, .g_r, .g_u, .g_d, .g_a, .g__ {
+font-family: Arial;
+font-size: 10pt;
+text-align: right;
+}
+/* css button tang giam  */
+.arrow-left {
+border-left: none !important;
+border-right: 8px solid white;
+left: 590px;
+}
+.arrow-right, .arrow-left {
+border-top: 4px solid transparent;
+border-bottom: 4px solid transparent;
+border-left: 8px solid white;
+position: relative;
+top: -106px;
+right: 715px;
+bottom: 0;
+}
+.border-line {
+position: absolute;
+height: 1px;
+bottom: -1px;
+background: #858585;
+right: -1px;
+left: 0;
+}

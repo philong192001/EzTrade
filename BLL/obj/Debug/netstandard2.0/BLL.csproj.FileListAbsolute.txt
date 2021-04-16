@@ -1,0 +1,12 @@
+E:\FPTS\EzTrade_Demo\BLL\bin\Debug\netstandard2.0\DAL.dll
+E:\FPTS\EzTrade_Demo\BLL\obj\Debug\netstandard2.0\BLL.csprojAssemblyReference.cache
+E:\FPTS\EzTrade_Demo\BLL\obj\Debug\netstandard2.0\BLL.AssemblyInfoInputs.cache
+E:\FPTS\EzTrade_Demo\BLL\obj\Debug\netstandard2.0\BLL.AssemblyInfo.cs
+E:\FPTS\EzTrade_Demo\BLL\obj\Debug\netstandard2.0\BLL.csproj.CoreCompileInputs.cache
+E:\FPTS\EzTrade_Demo\BLL\bin\Debug\netstandard2.0\BLL.deps.json
+E:\FPTS\EzTrade_Demo\BLL\bin\Debug\netstandard2.0\BLL.dll
+E:\FPTS\EzTrade_Demo\BLL\bin\Debug\netstandard2.0\BLL.pdb
+E:\FPTS\EzTrade_Demo\BLL\bin\Debug\netstandard2.0\DAL.pdb
+E:\FPTS\EzTrade_Demo\BLL\obj\Debug\netstandard2.0\BLL.csproj.CopyComplete
+E:\FPTS\EzTrade_Demo\BLL\obj\Debug\netstandard2.0\BLL.dll
+E:\FPTS\EzTrade_Demo\BLL\obj\Debug\netstandard2.0\BLL.pdb

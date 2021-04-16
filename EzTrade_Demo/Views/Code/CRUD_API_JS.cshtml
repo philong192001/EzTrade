@@ -1,0 +1,531 @@
+﻿<div class="container">
+    <div class="row mt-3" style="margin-bottom:10px;">
+        <div class="col-md-12">
+            <h3>CRUD Bang? Gia'</h3>
+            <form class="add-post-form row">
+                <input type="hidden" id="id-value" />
+                <div class="form-group col-md-3">
+                    <label for="title">Giá TC</label>
+                    <input type="number" class="form-control" id="tc-value" />
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="title">Giá Trần</label>
+                    <input type="number" class="form-control" id="tran-value" />
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="title">Giá Sàn</label>
+                    <input type="number" class="form-control" id="san-value" />
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="title">G3 Mua</label>
+                    <input type="number" class="form-control" id="g3mua-value" />
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="title">KL3 Mua</label>
+                    <input type="number" class="form-control" id="kl3mua-value" />
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="title">G2 Mua</label>
+                    <input type="number" class="form-control" id="g2mua-value" />
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="title">Kl2 Mua</label>
+                    <input type="number" class="form-control" id="kl2mua-value" />
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="title">G1 Mua</label>
+                    <input type="number" class="form-control" id="g1mua-value" />
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="title">KL1 Mua</label>
+                    <input type="number" class="form-control" id="kl1mua-value" />
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="title">Giá Khớp Lệnh</label>
+                    <input type="number" class="form-control" id="giakhoplenh-value" />
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="title">KL Khớp Lệnh</label>
+                    <input type="number" class="form-control" id="klkhoplenh-value" />
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="title">G1 Bán</label>
+                    <input type="number" class="form-control" id="g1ban-value" />
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="title">KL1 Bán</label>
+                    <input type="number" class="form-control" id="kl1ban-value" />
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="title">G2 Bán</label>
+                    <input type="number" class="form-control" id="g2ban-value" />
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="title">KL2 Bán</label>
+                    <input type="number" class="form-control" id="kl2ban-value" />
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="title">G3 Bán</label>
+                    <input type="number" class="form-control" id="g3ban-value" />
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="title">KL3 Bán</label>
+                    <input type="number" class="form-control" id="kl3ban-value" />
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="title">Tổng KL</label>
+                    <input type="number" class="form-control" id="tongkl-value" />
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="body">Mở Cửa</label>
+                    <input type="number" class="form-control" id="mocua-value" />
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="body">Cao Nhất</label>
+                    <input type="number" class="form-control" id="caonhat-value" />
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="body">Thấp Nhất</label>
+                    <input type="number" class="form-control" id="thapnhat-value" />
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="body">NN mua</label>
+                    <input type="number" class="form-control" id="nnmua-value" />
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="body">NN bán</label>
+                    <input type="number" class="form-control" id="nnban-value" />
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="body">Room Còn Lại</label>
+                    <input type="number" class="form-control" id="roomconlai-value" />
+                </div>
+                <button type="submit" class="btn btn-primary">Add Post</button>
+            </form>
+        </div>
+    </div>
+
+    <table class="table table-bordered table-priceboard tablesorter tablesorter-default" style="background-color:darkgray;">
+        <thead style="cursor: pointer;">
+            <tr class="tablesorter-headerRow">
+                <th rowspan="2" class="hbrb tablesorter-header tablesorter-headerUnSorted">
+                    <div class="tablesorter-header-inner " style="color:red"> ID</div>
+                </th>
+                <th rowspan="2" class="hg_b tablesorter-header tablesorter-headerUnSorted">
+                    <div class="tablesorter-header-inner" style="color:red">TC</div>
+                </th>
+                <th rowspan="2" class="hg_b tablesorter-header tablesorter-headerUnSorted">
+                    <div class="tablesorter-header-inner" style="color:red">Trần</div>
+                </th>
+                <th rowspan="2" class="hg_b tablesorter-header tablesorter-headerUnSorted">
+                    <div class="tablesorter-header-inner" style="color:red">Sàn</div>
+                </th>
+                <th colspan="6" class="hbrb sorter-false tablesorter-header tablesorter-headerUnSorted">
+                    <div class="tablesorter-header-inner" style="color:red">Mua</div>
+                </th>
+                <th colspan="2" class="hgrb sorter-false tablesorter-header tablesorter-headerUnSorted">
+                    <div class="tablesorter-header-inner" style="color:red">Khớp lệnh</div>
+                </th>
+                <th colspan="6" class="hbrb sorter-false tablesorter-header tablesorter-headerUnSorted">
+                    <div class="tablesorter-header-inner" style="color:red">Bán</div>
+                </th>
+                <th rowspan="2" class="hg_b tablesorter-header tablesorter-headerUnSorted">
+                    <div class="tablesorter-header-inner" style="color:red">Tổng KL</div>
+                </th>
+                <th rowspan="2" class="hg_b tablesorter-header tablesorter-headerUnSorted">
+                    <div class="tablesorter-header-inner" style="color:red">Mở <br /> Cửa</div>
+                </th>
+                <th rowspan="2" class="hg_b tablesorter-header tablesorter-headerUnSorted">
+                    <div class="tablesorter-header-inner" style="color:red">Cao <br> Nhất</div>
+                </th>
+                <th rowspan="2" class="hg_b tablesorter-header tablesorter-headerUnSorted">
+                    <div class="tablesorter-header-inner" style="color:red">Thấp <br> Nhất</div>
+                </th>
+                <th rowspan="2" class="hg_b tablesorter-header tablesorter-headerUnSorted">
+                    <div class="tablesorter-header-inner" style="color:red">NN <br> Mua</div>
+                </th>
+                <th rowspan="2" class="hg_b tablesorter-header tablesorter-headerUnSorted">
+                    <div class="tablesorter-header-inner" style="color:red">NN <br> Bán</div>
+                </th>
+                <th rowspan="2" class="hg_b tablesorter-header tablesorter-headerUnSorted">
+                    <div class="tablesorter-header-inner" style="color:red">Room <br> Còn lại</div>
+                </th>
+                <th rowspan="2">
+                </th>
+                <th rowspan="2">
+                </th>
+                <th rowspan="2">
+                </th>
+                <th rowspan="2">
+                </th>
+            </tr>
+            <tr class="tablesorter-headerRow">
+                <th class="hb_b tablesorter-header tablesorter-headerUnSorted">
+                    <div class="tablesorter-header-inner" style="color:red">G3</div>
+                </th>
+                <th class="hb_b tablesorter-header tablesorter-headerUnSorted">
+                    <div class="tablesorter-header-inner" style="color:red">KL3</div>
+                </th>
+                <th class="hb_b tablesorter-header tablesorter-headerUnSorted">
+                    <div class="tablesorter-header-inner" style="color:red">G2</div>
+                </th>
+                <th class="hb_b tablesorter-header tablesorter-headerUnSorted">
+                    <div class="tablesorter-header-inner" style="color:red">KL2</div>
+                </th>
+                <th class="hb_b tablesorter-header tablesorter-headerUnSorted">
+                    <div class="tablesorter-header-inner" style="color:red">G1</div>
+                </th>
+                <th class="hb_b tablesorter-header tablesorter-headerUnSorted">
+                    <div class="tablesorter-header-inner" style="color:red">KL1</div>
+                </th>
+                <th class="hg_b tablesorter-header tablesorter-headerUnSorted">
+                    <div class="tablesorter-header-inner" style="color:red">Gía</div>
+                </th>
+                <th class="hg_b tablesorter-header tablesorter-headerUnSorted">
+                    <div class="tablesorter-header-inner" style="color:red">KL</div>
+                </th>
+                <th class="hb_b tablesorter-header tablesorter-headerUnSorted">
+                    <div class="tablesorter-header-inner" style="color:red">G1</div>
+                </th>
+                <th class="hb_b tablesorter-header tablesorter-headerUnSorted">
+                    <div class="tablesorter-header-inner" style="color:red">KL1</div>
+                </th>
+                <th class="hb_b tablesorter-header tablesorter-headerUnSorted">
+                    <div class="tablesorter-header-inner" style="color:red">G2</div>
+                </th>
+                <th class="hb_b tablesorter-header tablesorter-headerUnSorted">
+                    <div class="tablesorter-header-inner" style="color:red">KL2</div>
+                </th>
+                <th class="hb_b tablesorter-header tablesorter-headerUnSorted">
+                    <div class="tablesorter-header-inner" style="color:red">G3</div>
+                </th>
+                <th class="hb_b tablesorter-header tablesorter-headerUnSorted">
+                    <div class="tablesorter-header-inner" style="color:red">KL3</div>
+                </th>
+            </tr>
+        </thead>
+        <tbody id="posts-list">
+            <tr class="MaCK" id="0">
+                <td class="cccu fixedcol">
+                    <span>1</span>
+                </td>
+                <td class="g_r">45</td>
+                <td class="g_c">48.15</td>
+                <td class="grf">41.85</td>
+                <td>41.85</td>
+                <td>95,600</td>
+                <td>48.15</td>
+                <td>42,900</td>
+                <td>45.86</td>
+                <td>31,200</td>
+                <td>45.85</td>
+                <td>63,700</td>
+                <td>45.75</td>
+                <td>50,900</td>
+                <td>45.8</td>
+                <td>96,200</td>
+                <td>45.85</td>
+                <td>65,700</td>
+                <td class="g__">3,323,700</td>
+                <td>45.7</td>
+                <td>45.9</td>
+                <td>45.15</td>
+                <td class="g__">3900</td>
+                <td class="g__">993,900</td>
+                <td class="g__">521,078,741</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div id="messagesList">
+
+</div>
+@*<script>
+
+    const postlist = document.querySelector('#posts-list');
+    const addPostForm = document.querySelector('.add-post-form');
+
+    const IdValue = document.getElementById('id-value');
+    const TCValue = document.getElementById('tc-value');
+    const TranValue = document.getElementById('tran-value');
+    const SanValue = document.getElementById('san-value');
+    const G3MuaValue = document.getElementById('g3mua-value');
+    const KL3MuaValue = document.getElementById('kl3mua-value');
+    const G2MuaValue = document.getElementById('g2mua-value');
+    const KL2MuaValue = document.getElementById('kl2mua-value');
+    const G1MuaValue = document.getElementById('g1mua-value');
+    const KL1MuaValue = document.getElementById('kl1mua-value');
+    const GiaKLValue = document.getElementById('giakhoplenh-value');
+    const KLKLValue = document.getElementById('klkhoplenh-value');
+    const G1BanValue = document.getElementById('g1ban-value');
+    const KL1BanValue = document.getElementById('kl1ban-value');
+    const G2BanValue = document.getElementById('g2ban-value');
+    const KL2BanValue = document.getElementById('kl2ban-value');
+    const G3BanValue = document.getElementById('g3ban-value');
+    const KL3BanValue = document.getElementById('kl3ban-value');
+    const TotalKLValue = document.getElementById('tongkl-value');
+    const OpenValue = document.getElementById('mocua-value');
+    const TallestValue = document.getElementById('caonhat-value');
+    const LowestValue = document.getElementById('thapnhat-value');
+    const NNmuaValue = document.getElementById('nnmua-value');
+    const NNbanValue = document.getElementById('nnban-value');
+    const RoomValue = document.getElementById('roomconlai-value');
+
+    const btnSubmit = document.querySelector('.btn')
+
+    let output = '';
+    let arrrayData = [];
+
+    const renderPosts = (posts) => {
+        console.log(arrrayData.length)
+        for (var i = 0; i < posts.length; i++) {
+            output += `
+                        <tr class="MaCK" data-id=${posts[i].id}">
+                            <td class="cccu fixedcol">
+                                ${posts[i].id}
+                            </td>
+                            <td class="g_r priceTC">${posts[i].price_TC}</td>
+                            <td class="g_c priceTran">${posts[i].price_Tran}</td>
+                            <td class="grf priceSan">${posts[i].price_San}</td>
+                            <td class="b_r priceG3Buy" >${posts[i].g3_Buy}</td>
+                            <td class="b_r priceKL3Buy" >${posts[i].kL3_Buy}</td>
+                            <td class="b_r priceG2Buy" >${posts[i].g2_Buy}</td>
+                            <td class="b_r priceKL2Buy" >${posts[i].kL2_Buy}</td>
+                            <td class="b_r priceG1Buy" >${posts[i].g1_Buy}</td>
+                            <td class="b_r priceKL1Buy" >${posts[i].kL1_Buy}</td>
+                            <td class="b_c priceOrder">${posts[i].price_OrderExecution}</td>
+                            <td class="b_c priceKLOrder" >${posts[i].kL_OrderExecution}</td>
+                            <td class="b_r priceG1Sell" >${posts[i].g1_Sell}</td>
+                            <td class="b_r priceKL1Sell" >${posts[i].kL1_Sell}</td>
+                            <td class="b_r priceG2Sell" >${posts[i].g2_Sell}</td>
+                            <td class="b_r priceKL2Sell" >${posts[i].kL2_Sell}</td>
+                            <td class="b_r priceG3Sell" >${posts[i].g3_Sell}</td>
+                            <td class="b_r priceKL3Sell" >${posts[i].kL3_Sell}</td>
+                            <td class="g__ totalKL">${posts[i].totalKL}</td>
+                            <td class="b_f openDoor" > ${ posts[i].openDoor}</td>
+                            <td class="b_f tallest" > ${posts[i].tallest}</td >
+                            <td class="b_u lowest" >${posts[i].lowest}</td>
+                            <td class="g__ nnbuy">${posts[i].nnBuy}</td>
+                            <td class="g__ nnsell">${posts[i].nnSell}</td>
+                            <td class="g__ room">${posts[i].room_Left}</td>
+                            <td><a class="btn btn-success" id="Update" onclick="edit(${i})">Edit</a></td>
+                            <td><a class="btn btn-danger" id="Delete">Delete</a></td>
+                            <td><input type="button" class="btn btn-primary"  id="joinGroup" value="Join Group Code" /></td>
+                        </tr>`;
+        }
+
+        postlist.innerHTML = output;
+    }
+    const url = 'https://localhost:44318/api/Code';
+    const urlCRUD = 'https://localhost:44318/api/CodeDetails';
+
+        fetch(`${url}/GetAllCode`).then(res => res.json())
+        .then(data => {
+            arrrayData = data;
+            //console.log(arrrayData)
+            renderPosts(data)
+        });  
+   
+
+    const edit = (index) => {
+        //alert(index)
+        //console.log(arrrayData)
+        console.log(arrrayData[index])
+        let PriceTC = arrrayData[index].price_TC;
+        let PriceTran = arrrayData[index].price_Tran;
+        let PriceSan = arrrayData[index].price_San;
+        let G3Buy = arrrayData[index].g3_Buy;
+        let KL3Buy = arrrayData[index].kL3_Buy;
+        let G2Buy = arrrayData[index].g2_Buy;
+        let KL2Buy = arrrayData[index].kL2_Buy;
+        let G1Buy = arrrayData[index].g1_Buy;
+        let KL1Buy = arrrayData[index].kL1_Buy;
+        let PriceOrder = arrrayData[index].price_OrderExecution;
+        let KLOrder = arrrayData[index].kL_OrderExecution;
+        let G1Sell = arrrayData[index].g1_Sell;
+        let KL1Sell = arrrayData[index].kL1_Sell;
+        let G2Sell = arrrayData[index].g2_Sell;
+        let KL2Sell = arrrayData[index].kL2_Sell;
+        let G3Sell = arrrayData[index].g3_Sell;
+        let KL3Sell = arrrayData[index].kL3_Sell;
+        let TotalKL = arrrayData[index].totalKL;
+        let OpenDoor = arrrayData[index].openDoor;
+        let Tallest = arrrayData[index].tallest;
+        let Lowest = arrrayData[index].lowest;
+        let NNBuy = arrrayData[index].nnBuy;
+        let NNSell = arrrayData[index].nnSell;
+        let RoomLeft = arrrayData[index].room_Left;
+        let Id = arrrayData[index].id;
+        console.log(PriceTC, G3Buy, NNBuy, Tallest)
+
+        IdValue.value = Id;
+        TCValue.value = PriceTC;
+        TranValue.value = PriceTran;
+        SanValue.value = PriceSan;
+        G3MuaValue.value = G3Buy;
+        KL3MuaValue.value = KL3Buy;
+        G2MuaValue.value = G2Buy;
+        KL2MuaValue.value = KL2Buy;
+        G1MuaValue.value = G1Buy;
+        KL1MuaValue.value = KL1Buy;
+        GiaKLValue.value = PriceOrder;
+        KLKLValue.value = KLOrder;
+        G1BanValue.value = G1Sell;
+        KL1BanValue.value = KL1Sell;
+        G2BanValue.value = G2Sell;
+        KL2BanValue.value = KL2Sell;
+        G3BanValue.value = G3Sell;
+        KL3BanValue.value = KL3Sell;
+        TotalKLValue.value = TotalKL;
+        OpenValue.value = OpenDoor;
+        TallestValue.value = Tallest;
+        LowestValue.value = Lowest;
+        NNmuaValue.value = NNBuy;
+        NNbanValue.value = NNSell;
+        RoomValue.value = RoomLeft;
+    }
+    btnSubmit.addEventListener('click', (e) => {
+        e.preventDefault();
+
+        var a = {
+            id: parseInt(IdValue.value),
+            price_TC: parseFloat(TCValue.value),
+            price_San: parseFloat(SanValue.value),
+            price_Tran: parseFloat(TranValue.value),
+            g1_Buy: parseFloat(G1MuaValue.value),
+            kL1_Buy: parseFloat(KL1MuaValue.value),
+            g2_Buy: parseFloat(G2MuaValue.value),
+            kL2_Buy: parseFloat(KL2MuaValue.value),
+            g3_Buy: parseFloat(G3MuaValue.value),
+            kL3_Buy: parseFloat(KL3MuaValue.value),
+            price_OrderExecution: parseFloat(GiaKLValue.value),
+            kL_OrderExecution: parseFloat(KLKLValue.value),
+            g1_Sell: parseFloat(G1BanValue.value),
+            kL1_Sell: parseFloat(KL1BanValue.value),
+            g2_Sell: parseFloat(G2BanValue.value),
+            kL2_Sell: parseFloat(KL2BanValue.value),
+            g3_Sell: parseFloat(G3BanValue.value),
+            kL3_Sell: parseFloat(KL3BanValue.value),
+            totalKL: parseFloat(TotalKLValue.value),
+            openDoor: parseFloat(OpenValue.value),
+            tallest: parseFloat(TallestValue.value),
+            lowest: parseFloat(LowestValue.value),
+            nnBuy: parseFloat(NNmuaValue.value),
+            nnSell: parseFloat(NNbanValue.value),
+            room_Left: parseFloat(RoomValue.value)
+        }
+        console.log(a);
+        fetch(`${urlCRUD}/Update`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(a)
+        })
+            .then(res => res.json())
+            .catch(error => {
+                console.log(error);
+            })
+            .then(() => location.reload())
+    })
+
+    //postlist.addEventListener('click', (e) => {
+    //    e.preventDefault();
+    //    let delButtonIsPressed = e.target.id == 'Delete';
+    //    let editButtonIsPressed = e.target.id == 'Update';
+
+    //    let id = e.target.parentElement.data;
+    //    console.log(id)
+    //    //Delete
+    //    if (delButtonIsPressed) {
+    //        fetch(`${urlCRUD}/Delete/${id}`, {
+    //            method: 'POST',
+    //        })
+    //            .then(res => res.json())
+    //            .then(() => window.location.reload())
+    //    }
+    //    //---------
+    //    if (editButtonIsPressed) {
+    //        const parent = e.target.parentElement.textContent;
+    //        console.log(parent);
+
+    //        let PriceTC = parent.querySelector('.priceTC').value;
+            //let PriceTran = parent.querySelector('.priceTran').textContent;
+            //let PriceSan = parent.querySelector('.priceSan').textContent;
+            //let G3Buy = parent.querySelector('priceG3Buy').textContent;
+            //let KL3Buy = parent.querySelector('.priceKL3Buy').textContent;
+            //let G2Buy = parent.querySelector('.priceG2Buy').textContent;
+            //let KL2Buy = parent.querySelector('.priceKL2Buy').textContent;
+            //let G1Buy = parent.querySelector('.priceG1Buy').textContent;
+            //let KL1Buy = parent.querySelector('.priceKL1Buy').textContent;
+            //let PriceOrder = parent.querySelector('.priceOrder').textContent;
+            //let KLOrder = parent.querySelector('.priceKLOrder').textContent;
+            //let G1Sell = parent.querySelector('.priceG1Sell').textContent;
+            //let KL1Sell = parent.querySelector('.priceKL1Sell').textContent;
+            //let G2Sell = parent.querySelector('.priceG2Sell').textContent;
+            //let KL2Sell = parent.querySelector('.priceKL2Sell').textContent;
+            //let G3Sell = parent.querySelector('.priceG3Sell').textContent;
+            //let KL3Sell = parent.querySelector('.priceKL3Sell').textContent;
+            //let TotalKL = parent.querySelector('.totalKL').textContent;
+            //let OpenDoor = parent.querySelector('.openDoor').textContent;
+            //let Tallest = parent.querySelector('.tallest').textContent;
+            //let Lowest = parent.querySelector('.lowest').textContent;
+            //let NNBuy = parent.querySelector('nnbuy').textContent;
+            //let NNSell = parent.querySelector('.nnsell').textContent;
+            //let RoomLeft = parent.querySelector('.room').textContent;
+
+    //        console.log(PriceTC);
+    //        TCValue.value = PriceTC;
+
+    //    }
+    //    //Update
+    //    btnSubmit.addEventListener('click', (e) => {
+    //        e.preventDefault();
+    //        var a = {
+    //            id: parseInt(idValue.value),
+    //            name: nameValue.value
+    //        }
+    //        console.log(a);
+    //        fetch(`${urlCRUD}/Update`, {
+    //            method: 'POST',
+    //            headers: {
+    //                'Content-Type': 'application/json'
+    //            },
+    //            body: JSON.stringify(
+    //                a
+    //            )
+    //        })
+    //            .then(res => res.json())
+    //            .catch(error => {
+    //                console.log(error);
+    //            })
+    //            .then(() => location.reload())
+    //    })
+    //})
+    //Create
+    //addPostForm.addEventListener('submit', (e) => {
+    //    e.preventDefault();
+
+    //    console.log(nameValue.value);
+    //    fetch(`${urlCRUD}/Create`, {
+    //        method: 'POST',
+    //        headers: {
+    //            'Content-Type': 'application/json'
+    //        },
+    //        body: JSON.stringify({
+    //            name: nameValue.value
+    //        })
+
+    //    })
+    //        .then(res => res.json())
+    //        .then(data => {
+    //            const dataObj = {};
+    //            dataObj.push(data);
+    //            renderPosts(dataObj);
+    //        })
+    //        .then(() => location.reload())
+    //        .catch(error => {
+    //            console.log(error);
+    //        });
+    //});
+</script>*@

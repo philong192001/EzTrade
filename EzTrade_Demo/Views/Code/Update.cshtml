@@ -1,0 +1,125 @@
+﻿@model DAL.Models.CodeDetails
+
+@{
+    ViewData["Title"] = "Update";
+    DAL.Models.CodeDetails t = (DAL.Models.CodeDetails)ViewBag.code;
+}
+
+<h2>Update </h2>
+<hr />
+<div class="row container">
+    <div class="col-md-12 col-lg-12 col-sm-12 ">
+        <form asp-action="Update" class="row col-md-12 col-lg-12 col-sm-12">
+            <div class="form-group col-md-3 col-lg-3 col-sm-3">
+                <label class="control-label">Giá Tham Chiếu</label>
+                <input asp-for="Price_TC" class="form-control" value="@t.Price_TC" id="priceTC" />
+            </div>
+            <div class="form-group col-md-3 col-lg-3 col-sm-3">
+                <label class="control-label">Giá Trần</label>
+                <input asp-for="Price_Tran" class="form-control" id="priceTran" value="@t.Price_Tran" />
+            </div>
+            <div class="form-group col-md-3 col-lg-3 col-sm-3">
+                <label class="control-label">Giá Sàn</label>
+                <input asp-for="Price_San" class="form-control" id="priceSan" value="@t.Price_San" />
+            </div>
+            <div class="form-group col-md-3 col-lg-3 col-sm-3">
+                <label class="control-label">G3 Mua</label>
+                <input asp-for="G3_Buy" class="form-control" id="g3Buy" value="@t.G3_Buy" />
+            </div>
+            <div class="form-group col-md-3 col-lg-3 col-sm-3">
+                <label class="control-label">KL3 Mua</label>
+                <input asp-for="KL3_Buy" class="form-control" id="KL3Buy" value="@t.KL3_Buy" />
+            </div>
+            <div class="form-group col-md-3 col-lg-3 col-sm-3">
+                <label class="control-label">G2 Mua</label>
+                <input asp-for="G2_Buy" class="form-control" id="g2Buy" value="@t.G2_Buy" />
+            </div>
+            <div class="form-group col-md-3 col-lg-3 col-sm-3">
+                <label class="control-label">KL2 Mua</label>
+                <input asp-for="KL2_Buy" class="form-control" id="KL2Buy" value="@t.KL2_Buy" />
+            </div>
+            <div class="form-group col-md-3 col-lg-3 col-sm-3">
+                <label class="control-label">G1 Mua</label>
+                <input asp-for="G1_Buy" class="form-control" id="g1Buy" value="@t.G1_Buy" />
+            </div>
+            <div class="form-group col-md-3 col-lg-3 col-sm-3">
+                <label class="control-label">KL1 Mua</label>
+                <input asp-for="KL1_Buy" class="form-control" id="KL1Buy" value="@t.KL1_Buy" />
+            </div>
+            <div class="form-group col-md-3 col-lg-3 col-sm-3">
+                <label class="control-label">Giá Khớp Lệnh</label>
+                <input asp-for="Price_OrderExecution" class="form-control" id="priceOrder" value="@t.Price_OrderExecution" />
+            </div>
+            <div class="form-group col-md-3 col-lg-3 col-sm-3">
+                <label class="control-label">KL Khớp Lệnh</label>
+                <input asp-for="KL_OrderExecution" class="form-control" id="KLOrder" value="@t.KL_OrderExecution" />
+            </div>
+            <div class="form-group col-md-3 col-lg-3 col-sm-3">
+                <label class="control-label">G1 Bán</label>
+                <input asp-for="G1_Sell" class="form-control" id="g1Sell" value="@t.G1_Sell" />
+            </div>
+            <div class="form-group col-md-3 col-lg-3 col-sm-3">
+                <label class="control-label">KL1 Bán</label>
+                <input asp-for="KL1_Sell" class="form-control" id="KL1Sell" value="@t.KL1_Sell" />
+            </div>
+            <div class="form-group col-md-3 col-lg-3 col-sm-3">
+                <label class="control-label">G2 Bán</label>
+                <input asp-for="G2_Sell" class="form-control" id="g2Sell" value="@t.G2_Sell" />
+            </div>
+            <div class="form-group col-md-3 col-lg-3 col-sm-3">
+                <label class="control-label">KL2 Bán</label>
+                <input asp-for="KL2_Sell" class="form-control" id="KL2Sell" value="@t.KL2_Sell" />
+            </div>
+            <div class="form-group col-md-3 col-lg-3 col-sm-3">
+                <label class="control-label">G3 Bán</label>
+                <input asp-for="G3_Sell" class="form-control" id="g3Sell" value="@t.G3_Sell" />
+            </div>
+            <div class="form-group col-md-3 col-lg-3 col-sm-3">
+                <label class="control-label">KL3 Bán</label>
+                <input asp-for="KL3_Sell" class="form-control" id="KL3Sell" value="@t.KL3_Sell" />
+            </div>
+            <div class="form-group col-md-3 col-lg-3 col-sm-3">
+                <label class="control-label">Tổng KL</label>
+                <input asp-for="TotalKL" class="form-control" id="totalKL" value="@t.TotalKL" />
+            </div>
+            <div class="form-group col-md-3 col-lg-3 col-sm-3">
+                <label class="control-label">Mở Cửa</label>
+                <input asp-for="OpenDoor" class="form-control" id="openDoor" value="@t.OpenDoor" />
+            </div>
+            <div class="form-group col-md-3 col-lg-3 col-sm-3">
+                <label class="control-label">Cao Nhất</label>
+                <input asp-for="Tallest" class="form-control" id="tallest" value="@t.Tallest" />
+            </div>
+            <div class="form-group col-md-3 col-lg-3 col-sm-3">
+                <label class="control-label">Thấp Nhất</label>
+                <input asp-for="Lowest" class="form-control" id="lowest" value="@t.Lowest" />
+            </div>
+            <div class="form-group col-md-3 col-lg-3 col-sm-3">
+                <label class="control-label">NN mua</label>
+                <input asp-for="NNBuy" class="form-control" id="nnbuy" value="@t.NNBuy" />
+            </div>
+            <div class="form-group col-md-3 col-lg-3 col-sm-3">
+                <label class="control-label">NN bán</label>
+                <input asp-for="NNSell" class="form-control" id="nnsell" value="@t.NNSell" />
+            </div>
+            <div class="form-group col-md-3 col-lg-3 col-sm-3">
+                <label class="control-label">Room Còn Lại</label>
+                <input asp-for="Room_Left" class="form-control" id="room" value="@t.Room_Left" />
+            </div>
+            <div class="form-group col-md-3 col-lg-3 col-sm-3">
+                <input type="submit" value="Save" id="sendButton" class="btn btn-primary" />
+            </div>
+            <div class="form-group col-md-3 col-lg-3 col-sm-3">
+                <input type="submit" value="AddToGroup" id="addToGroup" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+<div class="row">
+    <div class="col-6">
+        <ul id="messagesList"></ul>
+    </div>
+</div>

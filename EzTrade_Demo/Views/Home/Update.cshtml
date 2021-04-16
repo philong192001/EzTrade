@@ -1,0 +1,28 @@
+﻿@model DAL.Models.Code
+
+@{
+    ViewData["Title"] = "Update";
+}
+
+<h2>Update </h2>
+<hr />
+<div class="row container">
+    <div class="col-md-4">
+        <form asp-action="Update">
+            <div class="form-group">
+                <label class="control-label">Mã Chứng Khoán</label>
+                <input asp-for="NameCode" class="form-control" value="" />
+            </div>
+            <div class="form-group">
+                <label class="control-label">ID Chi tiết mã chứng khoán</label>
+                <input asp-for="Id_details" class="form-control" />
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>

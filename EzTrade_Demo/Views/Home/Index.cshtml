@@ -1,0 +1,719 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model IEnumerable<DAL.Models.Code>
+
+
+<div class="panel-horizontally" style="height:585px;">
+    <div id="panel-top" class="panel-top" style="height:100%;">
+        <div id="price-board-layout">
+            <div id="dvBodyMW" class="container-fluid col-priceboard">
+                <div class="col-xs-12 col-sm-12 col-priceboard" style="position:relative;overflow:hidden">
+                    <div id="divIndexChart" class="col-xs-12 col-sm-12 col-priceboard" style="width: 100%;">
+                        <ul id="divIndex" class="col-priceboard class-chart">
+                            <div class="scrollingHotSpotLeft" style="display: block; opacity: 0;"></div>
+                            <div class="scrollingHotSpotRight" style="display: block; opacity: 0;"></div>
+                            <div class="scrollWrapper kinetic-active" style="cursor: move;">
+                                <div class="scrollableArea" style="width: 1365px;">
+                                    <li id="liVNXALL" class="col-priceboard dvChart">
+                                        <div id="!Id" class="!Class">
+                                            <p>
+                                                <span class="mar_">VNXALL :</span>
+                                                <span id="VNXALL_IndexValue" class="maru txtIndex"> 1,926.63</span>
+                                                <span id="VNXALL_Image" class="arrowUp"></span>
+                                                <span id="VNXALL_Change" class="maru txtIndex">21.42</span>
+                                                <span class="maru">
+                                                    <span id="VNXALL_ChangePercent">1.07%</span>
+                                                </span>
+                                            </p>
+                                            <p>
+                                                <span class="mar_ spQtty">KL:</span>
+                                                <span id="VNXALL_TotalSharesAOM" class="mar_ txtIndex">476,549,653</span>
+                                                <span class="mar_ spValue">GT:</span>
+                                                <span id="VNXALL_TotalValuesAOM" class="mar_ txtIndex">11,468.99</span>
+                                                <span class="mar_ spUnit">tỷ</span>
+                                            </p>
+                                            <p>
+                                                <span class="arrowUp"></span>
+                                                <span id="VNXALL_Up" class="maru txtIndex">215</span>
+                                                <span class="marc txtIndex">
+                                                    (
+                                                    <span id="VNXALL_Ceiling">13</span>
+                                                    )
+                                                </span>
+                                                <span class="square"></span>
+                                                <span id="VNXALL_NoChange" class="marn txtIndex">61</span>
+                                                <span class="arrowDown"></span>
+                                                <span id="VNXALL_Down" class="mard txtIndex">47</span>
+                                                <span class="marf txtIndex">
+                                                    (
+                                                    <span id="VNXALL_Floor">2</span>
+                                                    )
+                                                </span>
+                                                <span class="HO_MarketStat txtIndex">Liên tục</span>
+                                            </p>
+                                        </div>
+                                        <div></div>
+                                    </li>
+                                    <li id="liVNI" class="col-priceboard dvChart">
+                                        <div id="!Id" class="!Class">
+                                            <p>
+                                                <span class="mar_">VNI :</span>
+                                                <span id="VNXALL_IndexValue" class="maru txtIndex"> 1,926.63</span>
+                                                <span id="VNXALL_Image" class="arrowUp"></span>
+                                                <span id="VNXALL_Change" class="maru txtIndex">21.42</span>
+                                                <span class="maru">
+                                                    <span id="VNXALL_ChangePercent">1.07%</span>
+                                                </span>
+                                            </p>
+                                            <p>
+                                                <span class="mar_ spQtty">KL:</span>
+                                                <span id="VNXALL_TotalSharesAOM" class="mar_ txtIndex">476,549,653</span>
+                                                <span class="mar_ spValue">GT:</span>
+                                                <span id="VNXALL_TotalValuesAOM" class="mar_ txtIndex">11,468.99</span>
+                                                <span class="mar_ spUnit">tỷ</span>
+                                            </p>
+                                            <p>
+                                                <span class="arrowUp"></span>
+                                                <span id="VNXALL_Up" class="maru txtIndex">215</span>
+                                                <span class="marc txtIndex">
+                                                    (
+                                                    <span id="VNXALL_Ceiling">13</span>
+                                                    )
+                                                </span>
+                                                <span class="square"></span>
+                                                <span id="VNXALL_NoChange" class="marn txtIndex">61</span>
+                                                <span class="arrowDown"></span>
+                                                <span id="VNXALL_Down" class="mard txtIndex">47</span>
+                                                <span class="marf txtIndex">
+                                                    (
+                                                    <span id="VNXALL_Floor">2</span>
+                                                    )
+                                                </span>
+                                                <span class="HO_MarketStat txtIndex">Liên tục</span>
+                                            </p>
+                                        </div>
+                                        <div></div>
+                                    </li>
+                                    <li id="liHNX" class="col-priceboard dvChart">
+                                        <div id="!Id" class="!Class">
+                                            <p>
+                                                <span class="mar_">HNX :</span>
+                                                <span id="VNXALL_IndexValue" class="maru txtIndex"> 1,926.63</span>
+                                                <span id="VNXALL_Image" class="arrowUp"></span>
+                                                <span id="VNXALL_Change" class="maru txtIndex">21.42</span>
+                                                <span class="maru">
+                                                    <span id="VNXALL_ChangePercent">1.07%</span>
+                                                </span>
+                                            </p>
+                                            <p>
+                                                <span class="mar_ spQtty">KL:</span>
+                                                <span id="VNXALL_TotalSharesAOM" class="mar_ txtIndex">476,549,653</span>
+                                                <span class="mar_ spValue">GT:</span>
+                                                <span id="VNXALL_TotalValuesAOM" class="mar_ txtIndex">11,468.99</span>
+                                                <span class="mar_ spUnit">tỷ</span>
+                                            </p>
+                                            <p>
+                                                <span class="arrowUp"></span>
+                                                <span id="VNXALL_Up" class="maru txtIndex">215</span>
+                                                <span class="marc txtIndex">
+                                                    (
+                                                    <span id="VNXALL_Ceiling">13</span>
+                                                    )
+                                                </span>
+                                                <span class="square"></span>
+                                                <span id="VNXALL_NoChange" class="marn txtIndex">61</span>
+                                                <span class="arrowDown"></span>
+                                                <span id="VNXALL_Down" class="mard txtIndex">47</span>
+                                                <span class="marf txtIndex">
+                                                    (
+                                                    <span id="VNXALL_Floor">2</span>
+                                                    )
+                                                </span>
+                                                <span class="HO_MarketStat txtIndex">Liên tục</span>
+                                            </p>
+                                        </div>
+                                        <div></div>
+                                    </li>
+                                    <li id="liHNX30" class="col-priceboard dvChart">
+                                        <div id="!Id" class="!Class">
+                                            <p>
+                                                <span class="mar_">HNX30 :</span>
+                                                <span id="VNXALL_IndexValue" class="maru txtIndex"> 1,926.63</span>
+                                                <span id="VNXALL_Image" class="arrowUp"></span>
+                                                <span id="VNXALL_Change" class="maru txtIndex">21.42</span>
+                                                <span class="maru">
+                                                    <span id="VNXALL_ChangePercent">1.07%</span>
+                                                </span>
+                                            </p>
+                                            <p>
+                                                <span class="mar_ spQtty">KL:</span>
+                                                <span id="VNXALL_TotalSharesAOM" class="mar_ txtIndex">476,549,653</span>
+                                                <span class="mar_ spValue">GT:</span>
+                                                <span id="VNXALL_TotalValuesAOM" class="mar_ txtIndex">11,468.99</span>
+                                                <span class="mar_ spUnit">tỷ</span>
+                                            </p>
+                                            <p>
+                                                <span class="arrowUp"></span>
+                                                <span id="VNXALL_Up" class="maru txtIndex">215</span>
+                                                <span class="marc txtIndex">
+                                                    (
+                                                    <span id="VNXALL_Ceiling">13</span>
+                                                    )
+                                                </span>
+                                                <span class="square"></span>
+                                                <span id="VNXALL_NoChange" class="marn txtIndex">61</span>
+                                                <span class="arrowDown"></span>
+                                                <span id="VNXALL_Down" class="mard txtIndex">47</span>
+                                                <span class="marf txtIndex">
+                                                    (
+                                                    <span id="VNXALL_Floor">2</span>
+                                                    )
+                                                </span>
+                                                <span class="HO_MarketStat txtIndex">Liên tục</span>
+                                            </p>
+                                        </div>
+                                        <div></div>
+                                    </li>
+                                    <li id="liVN30" class="col-priceboard dvChart">
+                                        <div id="!Id" class="!Class">
+                                            <p>
+                                                <span class="mar_">VN30 :</span>
+                                                <span id="VNXALL_IndexValue" class="maru txtIndex"> 1,926.63</span>
+                                                <span id="VNXALL_Image" class="arrowUp"></span>
+                                                <span id="VNXALL_Change" class="maru txtIndex">21.42</span>
+                                                <span class="maru">
+                                                    <span id="VNXALL_ChangePercent">1.07%</span>
+                                                </span>
+                                            </p>
+                                            <p>
+                                                <span class="mar_ spQtty">KL:</span>
+                                                <span id="VNXALL_TotalSharesAOM" class="mar_ txtIndex">476,549,653</span>
+                                                <span class="mar_ spValue">GT:</span>
+                                                <span id="VNXALL_TotalValuesAOM" class="mar_ txtIndex">11,468.99</span>
+                                                <span class="mar_ spUnit">tỷ</span>
+                                            </p>
+                                            <p>
+                                                <span class="arrowUp"></span>
+                                                <span id="VNXALL_Up" class="maru txtIndex">215</span>
+                                                <span class="marc txtIndex">
+                                                    (
+                                                    <span id="VNXALL_Ceiling">13</span>
+                                                    )
+                                                </span>
+                                                <span class="square"></span>
+                                                <span id="VNXALL_NoChange" class="marn txtIndex">61</span>
+                                                <span class="arrowDown"></span>
+                                                <span id="VNXALL_Down" class="mard txtIndex">47</span>
+                                                <span class="marf txtIndex">
+                                                    (
+                                                    <span id="VNXALL_Floor">2</span>
+                                                    )
+                                                </span>
+                                                <span class="HO_MarketStat txtIndex">Liên tục</span>
+                                            </p>
+                                        </div>
+                                        <div></div>
+                                    </li>
+                                    <li id="liUPCOM" class="col-priceboard dvChart">
+                                        <div id="!Id" class="!Class">
+                                            <p>
+                                                <span class="mar_">UPCOM :</span>
+                                                <span id="VNXALL_IndexValue" class="maru txtIndex"> 1,926.63</span>
+                                                <span id="VNXALL_Image" class="arrowUp"></span>
+                                                <span id="VNXALL_Change" class="maru txtIndex">21.42</span>
+                                                <span class="maru">
+                                                    <span id="VNXALL_ChangePercent">1.07%</span>
+                                                </span>
+                                            </p>
+                                            <p>
+                                                <span class="mar_ spQtty">KL:</span>
+                                                <span id="VNXALL_TotalSharesAOM" class="mar_ txtIndex">476,549,653</span>
+                                                <span class="mar_ spValue">GT:</span>
+                                                <span id="VNXALL_TotalValuesAOM" class="mar_ txtIndex">11,468.99</span>
+                                                <span class="mar_ spUnit">tỷ</span>
+                                            </p>
+                                            <p>
+                                                <span class="arrowUp"></span>
+                                                <span id="VNXALL_Up" class="maru txtIndex">215</span>
+                                                <span class="marc txtIndex">
+                                                    (
+                                                    <span id="VNXALL_Ceiling">13</span>
+                                                    )
+                                                </span>
+                                                <span class="square"></span>
+                                                <span id="VNXALL_NoChange" class="marn txtIndex">61</span>
+                                                <span class="arrowDown"></span>
+                                                <span id="VNXALL_Down" class="mard txtIndex">47</span>
+                                                <span class="marf txtIndex">
+                                                    (
+                                                    <span id="VNXALL_Floor">2</span>
+                                                    )
+                                                </span>
+                                                <span class="HO_MarketStat txtIndex">Liên tục</span>
+                                            </p>
+                                        </div>
+                                        <div></div>
+                                    </li>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                    <div style="clear: both;"></div>
+                </div>
+                <div style="clear: both;"></div>
+                <div id="dvFixed" class="col-xs-12 col-sm-12 col-priceboard ezfu-main-top" style="height:480px">
+                    <div id="dvMenuBar" class="navbar-collapse col-priceboard" style="height: 30px;">
+                        <ul id="mnLP" class="nav-price navbar-nav navbar-price nav-tabs-price col-xs-9 col-sm-9 sm">
+                            <li class="dropdown">
+                                <a class=" textMenu bgHighlight" id="aHO">HOSE:VN30</a>
+                                <ul class="dropdown-menu dropdown-menu-price" style="width: 20em; top: auto; left: 0px; margin-left: 0px; margin-top: 0px;  min-width: 10em; max-width: 20em;">
+                                    <li id="All" class=" bdMenu">
+                                        <a href="" id="aAll" class=" clickMenu">VNI</a>
+                                    </li>
+                                    <li id="VN30" class="bdMenu active">
+                                        <a href="" id="aVN30" class=" clickMenu">VN30</a>
+                                    </li>
+                                    <li id="PT_HO" class="bdMenu">
+                                        <a href="">Giao dịch Thỏa Thuận</a>
+                                    </li>
+                                    <li id="VNXALL" class="bdMenu">
+                                        <a href="" id="aVNXALL" class=" clickMenu">VNXALL</a>
+                                    </li>
+                                    <li id="VN100" class="bdMenu">
+                                        <a href="" id="aVN100" class=" clickMenu">VN100</a>
+                                    </li>
+                                    <li id="VNALL" class="bdMenu">
+                                        <a href="" id="aVNALL" class=" clickMenu">VNALL</a>
+                                    </li>
+                                    <li id="VNMID" class="bdMenu">
+                                        <a href="" id="aVNMID" class=" clickMenu">VNMID</a>
+                                    </li>
+                                    <li id="VNSML" class="bdMenu">
+                                        <a href="" id="aVNSML" class=" clickMenu">VNSML</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="" class=" textMenu" id="aHA">HNX</a>
+                                <ul class="dropdown-menu dropdown-menu-price" style="width: 20em; top: auto; left: 0px; margin-left: 0px; margin-top: 0px; min-width: 10em; max-width: 20em;">
+                                    <li id="HNXIndex" class=" bdMenu">
+                                        <a href="" id="aHNXIndex" class=" clickMenu">HNX</a>
+                                    </li>
+                                    <li id="HNX30" class=" bdMenu">
+                                        <a href="" id="aHNX30" class=" clickMenu">HNX30</a>
+                                    </li>
+                                    <li id="PT_HA" class="bdMenu">
+                                        <a href="" id="aPT_HA" class=" clickMenu">Giao dịch thỏa thuận</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="" class=" textMenu" id="aUP">UPCOM</a>
+                                <ul class="dropdown-menu dropdown-menu-price" style="width: 20em; top: auto; left: 0px; margin-left: 0px; margin-top: 0px; min-width: 10em; max-width: 20em;">
+                                    <li id="HNXUpcomIndex" class=" bdMenu">
+                                        <a href="" id="aHNXUpcomIndex" class=" clickMenu">UPCOM</a>
+                                    </li>
+                                    <li id="PT_UP">
+                                        <a href="" id="aPT_UP" class=" clickMenu">Giao dịch Thỏa thuận</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="" class=" textMenu" id="aMinistry">Ngành</a>
+                                <ul class="dropdown-menu dropdown-menu-price widthAlign sm-nowrap" style="width: auto;  top: auto; left: 0px; margin-left: 0px; margin-top: 0px; min-width: 10em; max-width: 20em;">
+                                    <li id="Ministry0" class=" bdMenu menuLeft">
+                                        <a href="" id="aMinistry0" class=" clickMenu"></a>
+                                    </li>
+                                    <li id="Ministry1" class=" bdMenu menuRight">
+                                        <a href="" id="aMinistry1" class=" clickMenu">Bảo hiểm</a>
+                                    </li>
+                                    <li id="Ministry2" class=" bdMenu menuLeft">
+                                        <a href="" class=" clickMenu" id="aMinistry2">Cơ sở hạ tầng giao thông vận tải</a>
+                                    </li>
+                                    <li id="Ministry3" class=" bdMenu menuRight">
+                                        <a href="" id="aMinistry3" class=" clickMenu">Công nghệ thông tin tích hợp</a>
+                                    </li>
+                                    <li id="Ministry4" class=" bdMenu menuLeft">
+                                        <a href="" id="aMinistry4" class=" clickMenu">Công ty chứng khoán</a>
+                                    </li>
+                                    <li id="Ministry5" class=" bdMenu menuRight">
+                                        <a href="" id="aMinistry5" class=" clickMenu">Dịch vụ & thiết bị y tế</a>
+                                    </li>
+                                    <li id="Ministry6" class=" bdMenu menuLeft">
+                                        <a href="" id="aMinistry6" class=" clickMenu"> Dịch vụ công cộng</a>
+                                    </li>
+                                    <li id="Ministry7" class=" bdMenu menuRight">
+                                        <a href="" id="aMinistry7" class=" clickMenu">Dịch vụ thương mại chuyên biệt</a>
+                                    </li>
+                                    <li id="Ministry8" class=" bdMenu menuLeft">
+                                        <a href="" id="aMinistry8" class=" clickMenu">Dịch vụ viễn thông</a>
+                                    </li>
+                                    <li id="Ministry9" class=" bdMenu menuRight">
+                                        <a href="" id="aMinistry9"> Dược phẩm, Công nghệ sinh học</a>
+                                    </li>
+                                    <li id="Ministry10" class=" bdMenu menuLeft">
+                                        <a href="" id="aMinistry10">Giấy và các sản phẩm từ gỗ</a>
+                                    </li>
+                                    <li id="Ministry11" class=" bdMenu menuRight">
+                                        <a href="" id="aMinistry11">Hàng tiêu dùng lâu bền</a>
+                                    </li>
+                                    <li id="Ministry12" class=" bdMenu menuLeft">
+                                        <a href="" id="aMinistry12">Kim loại & Khai khoáng</a>
+                                    </li>
+                                    <li id="Ministry13" class=" bdMenu menuRight">
+                                        <a href="" id="aMinistry13">Năng lượng</a>
+                                    </li>
+                                    <li id="Ministry14" class=" bdMenu menuLeft">
+                                        <a href="" id="aMinistry14">Ngân hàng</a>
+                                    </li>
+                                    <li id="Ministry15" class=" bdMenu menuRight">
+                                        <a href="" id="aMinistry15">Nguyên vật liệu</a>
+                                    </li>
+                                    <li id="Ministry16" class=" bdMenu menuLeft">
+                                        <a href="" id="aMinistry16">Ô tô & Phụ tùng</a>
+                                    </li>
+                                    <li id="Ministry17" class=" bdMenu menuRight">
+                                        <a href="" id="aMinistry17">Phần cứng</a>
+                                    </li>
+                                    <li id="Ministry18" class=" bdMenu menuLeft">
+                                        <a href="" id="aMinistry18">Phần mềm</a>
+                                    </li>
+                                    <li id="Ministry19" class=" bdMenu menuRight">
+                                        <a href="" id="aMinistry19">Quản lý, phát triển bất động sản</a>
+                                    </li>
+                                    <li id="Ministry20" class=" bdMenu menuLeft">
+                                        <a href="" id="aMinistry20">Quỹ</a>
+                                    </li>
+                                    <li id="Ministry21" class=" bdMenu menuRight">
+                                        <a href="" id="aMinistry21">Sản phẩm cá nhân & hộ gia đình</a>
+                                    </li>
+                                    <li id="Ministry22" class=" bdMenu menuLeft">
+                                        <a href="" id="aMinistry22">Tài chính chuyên biệt khác</a>
+                                    </li>
+                                    <li id="Ministry23" class=" bdMenu menuRight">
+                                        <a href="" id="aMinistry23">Thực phẩm & Đồ uống</a>
+                                    </li>
+                                    <li id="Ministry24" class=" bdMenu menuLeft">
+                                        <a href="" id="aMinistry24">Truyền thông và xuất bản</a>
+                                    </li>
+                                    <li id="Ministry25" class=" bdMenu menuRight">
+                                        <a href="" id="aMinistry25">Tư liệu sản xuất</a>
+                                    </li>
+                                    <li id="Ministry26" class="menuLeft">
+                                        <a href="" id="aMinistry26">Vận tải</a>
+                                    </li>
+                                    <li id="Ministry27" class="menuRight">
+                                        <a href="" id="aMinistry27">Vật liệu xây dựngs</a>
+                                    </li>
+                                </ul>
+                                <span class="scroll-up" style="top: auto;left: 0px;margin-left: 1px;width: 442px;z-index: 10002;background-color: rgb(6, 6, 6);display: none;margin-top: -137px;visibility: hidden;">
+                                    <span class="scroll-up-arrow"></span>
+                                </span>
+                                <span class="scroll-down" style="top: auto; left: 0px; margin-left: 1px; width: 442px; z-index: 10002; background-color: rgb(6, 6, 6); display: none; margin-top: 181px; visibility: hidden;">
+                                    <span class="scroll-down-arrow"></span>
+                                </span>
+                            </li>
+                            <li class="dropdown">
+                                <a href="" id="aStatistics" class=" textMenu">Thống kê</a>
+                                <ul class="dropdown-menu dropdown-menu-price" style="width: 20em;  top: auto; left: 0px; margin-left: 0px; margin-top: 0px; min-width: 10em; max-width: 20em;">
+                                    <li id="HIST_INDEX" class=" bdMenu">
+                                        <a href="" id="aHIST_INDEX" class=" clickMenu">Thống kê Index</a>
+                                    </li>
+                                    <li id="HIST_PRICE" class=" bdMenu">
+                                        <a id="aHIST_PRICE" class=" clickMenu" href="">Thống kê Giá</a>
+                                    </li>
+                                    <li id="HIST_ORDER" class=" bdMenu">
+                                        <a id="aHIST_ORDER" href="" class=" clickMenu">Thống kê Đặt lệnh</a>
+                                    </li>
+                                    <li id="HIST_FOREIGN_NM" class=" bdMenu">
+                                        <a id="aHIST_FOREIGN_NM" href="" class=" clickMenu">Giao dịch khớp lệnh NDTNN</a>
+                                    </li>
+                                    <li id="HIST_FOREIGN_PT" class=" bdMenu">
+                                        <a id="aHIST_FOREIGN_PT" href="" class="clickMenu">Giao dịch thỏa thuận NDTNN</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a class=" textMenu" id="aCW" href="">Chứng quyền</a>
+                                <!-- <ul></ul> -->
+                            </li>
+                            <li class="dropdown">
+                                <a href="" class=" textMenu" id="aMarketWatch">Danh mục</a>
+                                <ul class="dropdown-menu dropdown-menu-price" style="width: 20em; top: auto; left: 0px; margin-left: 0px; margin-top: 0px; min-width: 10em; max-width: 20em;">
+                                    <li class=" keep">
+                                        <input type="text" id="txtAdd" placeholder="Thêm danh mục" class="textBox keep">
+                                        <span id="btAdd" class="imgAdd keep">
+
+                                        </span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span id="spExpand" title="Hiện đồ thị" class="imgExpandOpen"></span>
+                            </li>
+
+                        </ul>
+                        <div class="div-btn col-xs-4 col-sm-4 col-priceboard pull-right row">
+                            <button title="Đồ thị" class="btn btn-sm btn-chart">
+                                <img src="https://eztrade.fpts.com.vn/Content/images/line-chart-32.png">
+                            </button><div cla ss="cl-button">
+                                <input class="imgHelp" title="Hướng dẫn sử dụng" type="button" id="btHelp" data-toggle="modal" data-target="#mdHelp">
+                            </div>
+                            <div class="date-time">
+                                <label id="lbTradingDate"></label>
+                                <label id="lbDate" class="btn-priceboard">02/04/2021</label>
+                                <label id="lbClock" class="btn-priceboard hide">16:13:33</label>
+                            </div>
+                            <div class="btn-setting">
+                                <input type="button" id="btCustom" class="imgCustom" data-toggle="modal" data-target="#mdCustom" title="Thiết lập Giao diện">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="float-thead"></div>
+                    <div id="dvFixedH">
+                        <div id="dvContentLP" class="table-responsive" style="height:0,1px">
+                            <table id="tbLP" class="table table-bordered table-priceboard tablesorter tablesorter-default">
+                                <thead style="cursor: pointer;">
+                                    <tr class="tablesorter-headerRow">
+                                        <th rowspan="2" class="hbrb tablesorter-header tablesorter-headerUnSorted">
+                                            <div class="tablesorter-header-inner"> Mã</div>
+                                        </th>
+                                        <th rowspan="2" class="hg_b tablesorter-header tablesorter-headerUnSorted">
+                                            <div class="tablesorter-header-inner">TC</div>
+                                        </th>
+                                        <th rowspan="2" class="hg_b tablesorter-header tablesorter-headerUnSorted">
+                                            <div class="tablesorter-header-inner">Trần</div>
+                                        </th>
+                                        <th rowspan="2" class="hg_b tablesorter-header tablesorter-headerUnSorted">
+                                            <div class="tablesorter-header-inner">Sàn</div>
+                                        </th>
+                                        <th colspan="6" class="hbrb sorter-false tablesorter-header tablesorter-headerUnSorted">
+                                            <div class="tablesorter-header-inner">Mua</div>
+                                        </th>
+                                        <th colspan="3" class="hgrb sorter-false tablesorter-header tablesorter-headerUnSorted">
+                                            <div class="tablesorter-header-inner">Khớp lệnh</div>
+                                        </th>
+                                        <th colspan="6" class="hbrb sorter-false tablesorter-header tablesorter-headerUnSorted">
+                                            <div class="tablesorter-header-inner">Bán</div>
+                                        </th>
+                                        <th rowspan="2" class="hg_b tablesorter-header tablesorter-headerUnSorted">
+                                            <div class="tablesorter-header-inner">Tổng KL</div>
+                                        </th>
+                                        <th rowspan="2" class="hg_b tablesorter-header tablesorter-headerUnSorted">
+                                            <div class="tablesorter-header-inner">Mở <br /> Cửa</div>
+                                        </th>
+                                        <th rowspan="2" class="hg_b tablesorter-header tablesorter-headerUnSorted">
+                                            <div class="tablesorter-header-inner">Cao <br> Nhất</div>
+                                        </th>
+                                        <th rowspan="2" class="hg_b tablesorter-header tablesorter-headerUnSorted">
+                                            <div class="tablesorter-header-inner">Thấp <br> Nhất</div>
+                                        </th>
+                                        <!-- <th rowspan="2" class="hg_b tablesorter-header tablesorter-headerUnSorted">
+                                            <div class="tablesorter-header-inner">Trung <br> Bình</div>
+                                        </th> -->
+                                        <th rowspan="2" class="hg_b tablesorter-header tablesorter-headerUnSorted">
+                                            <div class="tablesorter-header-inner">NN <br> Mua</div>
+                                        </th>
+                                        <th rowspan="2" class="hg_b tablesorter-header tablesorter-headerUnSorted">
+                                            <div class="tablesorter-header-inner">NN <br> Bán</div>
+                                        </th>
+                                        <th rowspan="2" class="hg_b tablesorter-header tablesorter-headerUnSorted">
+                                            <div class="tablesorter-header-inner">Room <br> Còn lại</div>
+                                        </th>
+                                    </tr>
+                                    <tr class="tablesorter-headerRow">
+                                        <th class="hb_b tablesorter-header tablesorter-headerUnSorted">
+                                            <div class="tablesorter-header-inner">G3</div>
+                                        </th>
+                                        <th class="hb_b tablesorter-header tablesorter-headerUnSorted">
+                                            <div class="tablesorter-header-inner">KL3</div>
+                                        </th>
+                                        <th class="hb_b tablesorter-header tablesorter-headerUnSorted">
+                                            <div class="tablesorter-header-inner">G2</div>
+                                        </th>
+                                        <th class="hb_b tablesorter-header tablesorter-headerUnSorted">
+                                            <div class="tablesorter-header-inner">KL2</div>
+                                        </th>
+                                        <th class="hb_b tablesorter-header tablesorter-headerUnSorted">
+                                            <div class="tablesorter-header-inner">G1</div>
+                                        </th>
+                                        <th class="hb_b tablesorter-header tablesorter-headerUnSorted">
+                                            <div class="tablesorter-header-inner">KL1</div>
+                                        </th>
+                                        <th class="hg_b tablesorter-header tablesorter-headerUnSorted">
+                                            <div class="tablesorter-header-inner">Gía</div>
+                                        </th>
+                                        <th class="hg_b tablesorter-header tablesorter-headerUnSorted">
+                                            <div class="tablesorter-header-inner">KL</div>
+                                        </th>
+                                        <th class="hg_b tablesorter-header tablesorter-headerUnSorted">
+                                            <div class="tablesorter-header-inner">
+                                                @*<button style="border: none;box-shadow: none;  background: transparent; position: absolute;top: 0;left: 0;bottom: 0; width:15px">
+                                                    <div class="arrow arrow-left"></div>
+                                                </button>*@
+                                                +/-
+                                                @*<button style="border: none;box-shadow: none;  background: transparent; position: absolute;top: 0;right: 0;bottom: 0;width:15px">
+                                                    <div class="arrow arrow-right"></div>
+                                                </button>*@
+                                                <div class="border-line"></div>
+                                            </div>
+                                        </th>
+                                        <th class="hb_b tablesorter-header tablesorter-headerUnSorted">
+                                            <div class="tablesorter-header-inner">G1</div>
+                                        </th>
+                                        <th class="hb_b tablesorter-header tablesorter-headerUnSorted">
+                                            <div class="tablesorter-header-inner">KL1</div>
+                                        </th>
+                                        <th class="hb_b tablesorter-header tablesorter-headerUnSorted">
+                                            <div class="tablesorter-header-inner">G2</div>
+                                        </th>
+                                        <th class="hb_b tablesorter-header tablesorter-headerUnSorted">
+                                            <div class="tablesorter-header-inner">KL2</div>
+                                        </th>
+                                        <th class="hb_b tablesorter-header tablesorter-headerUnSorted">
+                                            <div class="tablesorter-header-inner">G3</div>
+                                        </th>
+                                        <th class="hb_b tablesorter-header tablesorter-headerUnSorted">
+                                            <div class="tablesorter-header-inner">KL3</div>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody id="firstTbody">
+                                    <tr class="MaCK" id="0">
+                                        <td class="cccu fixedcol">
+                                            <input class="cbTop priceboard" type="checkbox">
+                                            <span>BID</span>
+                                        </td>
+                                        <td class="g_r">45</td>
+                                        <td class="g_c">48.15</td>
+                                        <td class="grf">41.85</td>
+                                        <td>41.85</td>
+                                        <td>95,600</td>
+                                        <td>48.15</td>
+                                        <td>42,900</td>
+                                        <td>45.86</td>
+                                        <td>31,200</td>
+                                        <td>45.85</td>
+                                        <td>63,700</td>
+                                        <td>45.92%</td>
+                                        <td>45.75</td>
+                                        <td>50,900</td>
+                                        <td>45.8</td>
+                                        <td>96,200</td>
+                                        <td>45.85</td>
+                                        <td>65,700</td>
+                                        <td class="g__">3,323,700</td>
+                                        <td>45.7</td>
+                                        <td>45.9</td>
+                                        <td>45.15</td>
+                                        <td class="g__">3900</td>
+                                        <td class="g__">993,900</td>
+                                        <td class="g__">521,078,741</td>
+                                    </tr>
+                                    @*<tr id="1">
+                                        <td class="cccu fixedcol">
+                                            <input class="cbTop priceboard" type="checkbox">
+                                            <span>CTG</span>
+                                        </td>
+                                        <td class="g_r">41.3</td>
+                                        <td class="g_c">44.15</td>
+                                        <td class="grf">38.85</td>
+                                        <td class="b_u">41.5</td>
+                                        <td class="b_u">40,600</td>
+                                        <td class="b_u">41.75</td>
+                                        <td class="b_u">173,900</td>
+                                        <td class="b_u">41.95</td>
+                                        <td class="bru">20,500</td>
+                                        <td class="g_u">41.95</td>
+                                        <td class="g_u">10000</td>
+                                        <td class="gru">1.6%</td>
+                                        <td class="b_u">42</td>
+                                        <td class="b_u">25,900</td>
+                                        <td class="b_u">42.8</td>
+                                        <td class="b_u">196,200</td>
+                                        <td class="b_u">42.85</td>
+                                        <td class="b_u">225,700</td>
+                                        <td class="g__">16,323,700</td>
+                                        <td class="g_u">42.7</td>
+                                        <td class="g_u">42.9</td>
+                                        <td class="g_u">41.15</td>
+                                        <td class="g__">80,300</td>
+                                        <td class="g__">4,336,900</td>
+                                        <td class="g__">111,078,741</td>
+                                    </tr>
+                                    <tr id="2">
+                                        <td class="cccu fixedcol">
+                                            <input class="cbTop priceboard" type="checkbox">
+                                            <span>BVH</span>
+                                        </td>
+                                        <td class="g_r">61.8</td>
+                                        <td class="g_c">66.15</td>
+                                        <td class="grf">57.5</td>
+                                        <td class="b_u">61.8</td>
+                                        <td class="b_u">9,600</td>
+                                        <td class="b_u">60.75</td>
+                                        <td class="b_u">20,900</td>
+                                        <td class="b_u">60.86</td>
+                                        <td class="bru">34,200</td>
+                                        <td class="g_u">60.9</td>
+                                        <td class="g_u">500</td>
+                                        <td class="gru">-1.5%</td>
+                                        <td class="b_u">60.9</td>
+                                        <td class="b_u">3,200</td>
+                                        <td class="b_u">61.1</td>
+                                        <td class="b_u">4000</td>
+                                        <td class="b_u">61.2</td>
+                                        <td class="b_u">10,200</td>
+                                        <td class="g__">960,700</td>
+                                        <td class="g_u">63</td>
+                                        <td class="g_u">63</td>
+                                        <td class="g_u">60.7</td>
+                                        <td class="g__">60,500</td>
+                                        <td class="g__">476,900</td>
+                                        <td class="g__">159,598,741</td>
+                                    </tr>*@
+
+                                    @foreach (var item in Model)
+                                    {
+                                <tr id="@item.Id ">
+                                    <td class="cccu fixedcol">
+                                        <input class="cbTop priceboard" type="checkbox">
+                                        <span>@Html.DisplayFor(modelItem => item.NameCode)</span>
+                                    </td>
+                                    <td class="g_r"> @Html.DisplayFor(modelItem => item.Price_TC)</td>
+                                    <td class="g_c"> @Html.DisplayFor(modelItem => item.Price_Tran)</td>
+                                    <td class="grf"> @Html.DisplayFor(modelItem => item.Price_San)</td>
+                                    <td> @Html.DisplayFor(modelItem => item.G1_Buy)</td>
+                                    <td> @Html.DisplayFor(modelItem => item.KL1_Buy)</td>
+                                    <td> @Html.DisplayFor(modelItem => item.G2_Buy)</td>
+                                    <td> @Html.DisplayFor(modelItem => item.KL2_Buy)</td>
+                                    <td> @Html.DisplayFor(modelItem => item.G3_Buy)</td>
+                                    <td> @Html.DisplayFor(modelItem => item.KL3_Buy)</td>
+                                    <td> @Html.DisplayFor(modelItem => item.Price_OrderExecution)</td>
+                                    <td> @Html.DisplayFor(modelItem => item.KL_OrderExecution)</td>
+                                    <td>123%</td>
+                                    <td> @Html.DisplayFor(modelItem => item.G1_Sell)</td>
+                                    <td> @Html.DisplayFor(modelItem => item.KL1_Sell)</td>
+                                    <td> @Html.DisplayFor(modelItem => item.G2_Sell)</td>
+                                    <td> @Html.DisplayFor(modelItem => item.KL2_Sell)</td>
+                                    <td> @Html.DisplayFor(modelItem => item.G3_Sell)</td>
+                                    <td> @Html.DisplayFor(modelItem => item.KL3_Sell)</td>
+                                    <td class="g__"> @Html.DisplayFor(modelItem => item.TotalKL)</td>
+                                    <td> @Html.DisplayFor(modelItem => item.OpenDoor)</td>
+                                    <td> @Html.DisplayFor(modelItem => item.Tallest)</td>
+                                    <td> @Html.DisplayFor(modelItem => item.Lowest)</td>
+                                    <td class="g__"> @Html.DisplayFor(modelItem => item.NNBuy)</td>
+                                    <td class="g__"> @Html.DisplayFor(modelItem => item.NNSell)</td>
+                                    <td class="g__"> @Html.DisplayFor(modelItem => item.Room_Left)</td>
+                                </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
